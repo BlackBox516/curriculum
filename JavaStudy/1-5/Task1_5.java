@@ -11,13 +11,13 @@ public class Task1_5 {
 
         // ① 「みかん」、「りんご」、「ぶどう」、「メロン」の値を設定した配列 fruits を作成してください。
 
-      String [] arr = {"みかん","りんご","ぶどう","メロン"};
+      String [] fruits = {"みかん","りんご","ぶどう","メロン"};
         System.out.println();
 
         // ② for文を使って①で作成した配列を出力しなさい。
 
-        for (int i = 0; i < arr.length; i++){
-          System.out.println("arr[" + i + "]…" + arr[i]);
+        for (int i = 0; i < fruits.length; i++){
+          System.out.println("" + fruits[i]);
         
          System.out.println();
         }
@@ -30,9 +30,9 @@ public class Task1_5 {
         while(i <= 100) {
           System.out.print(i);
           i++;
-        
-        System.out.println();
         }
+        System.out.println();
+        
         /* ④ 行の最初に「段数」と「||」を追加したものを表示させるプログラムを作成しなさい。
         *     1 || 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
         *     2 || 2 | 4 | 6 | 8 | 10 | 12 | 14 | 16 | 18 |
@@ -45,14 +45,34 @@ public class Task1_5 {
         *     9 || 9 | 18 | 27 | 36 | 45 | 54 | 63 | 72 | 81 |
         */
 
+          
+        
+        
+
+          for(int k = 1; k <=9; k++) {
+           
+            System.out.print(k  + "||");
+          
             for (int j = 1; j <= 9; j++) {
-            System.out.println("||" + (i * j)  + i ++ );
-            System.out.println();
+            
+            
+             System.out.print( k * j + "|");
+           
+            
+            }
+          
+          System.out.println();
+        
+
+          }
+
+            
           
           
         
 
-        }
+        
+      
     }
 }
 
